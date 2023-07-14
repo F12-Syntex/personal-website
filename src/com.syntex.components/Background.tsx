@@ -1,4 +1,3 @@
-
 import '../com.syntex.sytling/Background.css';
 
 /**

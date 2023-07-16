@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className='website' id='personal-website'>
-      <div id='cursor'></div>
+      <div id='cursor' />
     </div>
   )
 }

@@ -1,8 +1,8 @@
 import { createRoot } from 'react-dom/client'
 import 'tailwindcss/tailwind.css'
-import App from 'com.syntex.components/App'
+import Home from 'com.syntex.components/Home'
 
 const container = document.getElementById('root') as HTMLDivElement
 const root = createRoot(container)
 
-root.render(<App />)
+root.render(<Home />)

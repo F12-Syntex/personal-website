@@ -7,7 +7,7 @@
     border-radius: 50%;
     opacity: 1;
     pointer-events: none;
-    transition: transform 0.3s ease-in-out; /* Set transition properties */
+    transition: transform 0.15s ease-in-out; /* Set transition properties */
 }
 
 #cursor.moving {

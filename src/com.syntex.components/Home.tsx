@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import '../com.syntex.sytling/App.css'
 import '../com.syntex.sytling/mouse.css'
 import MouseEffects from '../com.syntex.functionality/MouseEffects'
-import $ from 'jquery'
+// import $ from 'jquery'
 
 /**
  * The main component of the website

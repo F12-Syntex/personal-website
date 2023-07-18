@@ -17,6 +17,9 @@ function Home() {
     let currentCharIndex = 0
     let isDeleting = false
 
+    /**
+     * The function that types the text in the introduction page
+     */
     function typeWriter() {
       if (occupationText === null || cursor === null) return
 

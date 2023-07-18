@@ -1,3 +1,8 @@
+/**
+ * This class is responsible for handling mouse effects
+ * @class MouseEffects
+ * @export MouseEffects
+ */
 class MouseEffects {
   registerCustomCursor(document: Document) {
     // Get the element to apply mouse effects
@@ -19,6 +24,9 @@ class MouseEffects {
     document.addEventListener('mousedown', handleMouseDown)
     document.addEventListener('mouseup', handleMouseUp)
 
+    /**
+     * this function is responsible for handling mouse move event
+     */
     function handleMouseMove() {
       if (element == null) return
 
@@ -28,12 +36,18 @@ class MouseEffects {
       element.classList.remove('mousedown', 'mouseup') // Remove other classes
     }
 
+    /**
+     * this function is responsible for handling mouse down event
+     */
     function handleMouseDown() {
       if (element == null) return
       element.classList.add('mousedown') // Apply 'clicking' class when mouse button is pressed
       element.classList.remove('moving', 'mouseup') // Remove other classes
     }
 
+    /**
+     * this function is responsible for handling mouse up event
+     */
     function handleMouseUp() {
       if (element == null) return
       element.classList.add('mouseup') // Apply 'pressed' class when mouse button is released

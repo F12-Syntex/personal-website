@@ -61,20 +61,20 @@ function Home() {
 
   return (
     <div className="website" id="personal-website">
-      <div id="cursor"></div>
+      <div id="cursor" />
       <div className="website-content">
         <div className="introduction-page">
           <div className="introduction-label">
             <a>Hi,</a>
             <a>I'm Saif</a>
             <div className="changeAnimation">
-              <a id="occupation"></a>
-              <span id="cursor-introduction"></span>
+              <a id="occupation" />
+              <span id="cursor-introduction" />
             </div>
           </div>
         </div>
       </div>
-      <div className="contact"></div>
+      <div className="contact" />
     </div>
   )
 }

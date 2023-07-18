@@ -1,24 +1,24 @@
 #cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    opacity: 1;
-    pointer-events: none;
-    transition: transform 0.15s ease-in-out; /* Set transition properties */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  opacity: 1;
+  pointer-events: none;
+  transition: transform 0.15s ease-in-out; /* Set transition properties */
 }
 
 #cursor.moving {
-    background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #cursor.mousedown {
-    background-color: rgba(0, 0, 0, 0.75);
-    transform: scale(0.75);
+  background-color: rgba(0, 0, 0, 0.75);
+  transform: scale(0.75);
 }
 
-#cursor.mouseup {   
-    background-color: rgba(0, 0, 0, 0.5);
+#cursor.mouseup {
+  background-color: rgba(0, 0, 0, 0.5);
 }

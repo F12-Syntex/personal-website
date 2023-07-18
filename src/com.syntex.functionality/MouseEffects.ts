@@ -2,7 +2,7 @@ class MouseEffects {
   registerCustomCursor(document: Document) {
     // Get the element to apply mouse effects
     const element = document.getElementById('cursor')
-    console.log('Mouse moving1')
+    
 
     if (element == null) return
 

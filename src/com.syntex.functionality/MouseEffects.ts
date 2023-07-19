@@ -11,11 +11,10 @@ class MouseEffects {
     if (state) {
       element.classList.remove('mouseup', 'moving', 'mousedown') // Remove other classes
       element.classList.add('hover') // Apply 'hover' class when mouse is hovering
-    }else{
+    } else {
       element.classList.remove('mouseup', 'moving', 'mousedown', 'hover') // Remove other classes
       element.classList.add('moving') // Apply 'hover' class when mouse is hovering
     }
-
   }
 
   public static registerCustomCursor(document: Document) {
@@ -66,7 +65,7 @@ class MouseEffects {
       element.classList.add('mouseup') // Apply 'pressed' class when mouse button is released
       element.classList.remove('moving', 'mousedown') // Remove other classes
     }
-  } 
+  }
 }
 
 export default MouseEffects

@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import '../com.syntex.sytling/App.css'
 import '../com.syntex.sytling/mouse.css'
 import MouseEffects from '../com.syntex.functionality/MouseEffects'
-import $ from 'jquery'
+import ContactMe from '../com.syntex.components/ContactMe'
+// import $ from 'jquery'
 
 /**
  * The main component of the website
@@ -17,6 +18,9 @@ function Home() {
     let currentCharIndex = 0
     let isDeleting = false
 
+    /**
+     * The function that types the text in the introduction page
+     */
     function typeWriter() {
       if (occupationText === null || cursor === null) return
 
@@ -55,26 +59,27 @@ function Home() {
   }, [])
 
   useEffect(() => {
-    const effect = new MouseEffects()
-    effect.registerCustomCursor(document)
+    MouseEffects.registerCustomCursor(document)
   }, [])
 
   return (
     <div className="website" id="personal-website">
-      <div id="cursor"></div>
+      <div id="cursor" />
       <div className="website-content">
         <div className="introduction-page">
           <div className="introduction-label">
             <a>Hi,</a>
             <a>I'm Saif</a>
             <div className="changeAnimation">
-              <a id="occupation"></a>
-              <span id="cursor-introduction"></span>
+              <a id="occupation" />
+              <span id="cursor-introduction" />
             </div>
           </div>
         </div>
       </div>
-      <div className="contact"></div>
+      <div className="contact">
+        <ContactMe />
+      </div>
     </div>
   )
 }

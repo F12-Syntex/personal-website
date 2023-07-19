@@ -1,0 +1,32 @@
+.contact {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+
+    height: 100%;
+}
+
+#contact-label{
+    writing-mode: vertical-rl;
+
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-weight: normal;
+    user-select: none;
+
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

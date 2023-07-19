@@ -3,7 +3,7 @@
 /* global css for thee entire website */
 .website {
   display: grid;
-  grid-template-columns: auto 30px;
+  grid-template-columns: auto min(15vw, 80px);
   width: 100vw;
   height: 100vh;
   background-color: #252627;
@@ -47,10 +47,6 @@
   font-size: min(5vw, 5vh);
   height: min(5vw, 5vh);
   color: wheat;
-}
-
-.contact {
-  height: 100%;
 }
 
 .changeAnimation {

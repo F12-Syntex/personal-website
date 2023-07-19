@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import '../com.syntex.sytling/App.css'
 import '../com.syntex.sytling/mouse.css'
 import MouseEffects from '../com.syntex.functionality/MouseEffects'
+import ContactMe from '../com.syntex.components/ContactMe'
 // import $ from 'jquery'
 
 /**
@@ -58,8 +59,7 @@ function Home() {
   }, [])
 
   useEffect(() => {
-    const effect = new MouseEffects()
-    effect.registerCustomCursor(document)
+    MouseEffects.registerCustomCursor(document)
   }, [])
 
   return (
@@ -77,7 +77,9 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="contact" />
+      <div className="contact">
+        <ContactMe />
+      </div>
     </div>
   )
 }

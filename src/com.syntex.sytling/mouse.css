@@ -24,7 +24,7 @@
 }
 
 #cursor.hover {
-  background-color: rgba(63, 223, 48, 0.2);
-  transform: scale(2);
+  background-color: rgba(63, 223, 48, 0.15);
+  transform: scale(2.5);
   transition: transform 0.2s ease-in-out; /* Set transition properties */
 }

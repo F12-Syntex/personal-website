@@ -32,3 +32,10 @@
 .contact-container {
   cursor: pointer;
 }
+
+.contact-me-button-selected {
+  fill: white;
+}
+.contact-me-button-neutral {
+  fill: grey;
+}

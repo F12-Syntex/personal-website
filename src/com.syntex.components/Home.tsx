@@ -11,6 +11,18 @@ import ContactMe from '../com.syntex.components/ContactMe'
  */
 function Home() {
   useEffect(() => {
+
+    const isNotComputer = document.documentElement.clientWidth < 1024;
+
+    if (isNotComputer) {
+      const cursorElement = document.getElementById('cursor');
+      if (cursorElement) {
+        cursorElement.remove();
+      }
+    } else {
+      MouseEffects.registerCustomCursor(document);
+    }
+
     const occupationText = document.getElementById('occupation')
     const cursor = document.getElementById('cursor-introduction')
     const newTextArray = ['Front-end Developer', 'Software engineer']
@@ -58,9 +70,6 @@ function Home() {
     typeWriter()
   }, [])
 
-  useEffect(() => {
-    MouseEffects.registerCustomCursor(document)
-  }, [])
 
   return (
     <div className="website" id="personal-website">

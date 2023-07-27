@@ -29,13 +29,13 @@
   align-items: center;
 }
 
-.contact-container{
+.contact-container {
   cursor: pointer;
 }
 
-.contact-me-button-selected{
+.contact-me-button-selected {
   fill: white;
 }
-.contact-me-button-neutral{
+.contact-me-button-neutral {
   fill: grey;
 }

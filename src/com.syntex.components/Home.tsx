@@ -3,6 +3,7 @@ import '../com.syntex.sytling/App.scss'
 import '../com.syntex.sytling/mouse.scss'
 import MouseEffects from '../com.syntex.functionality/MouseEffects'
 import ContactMe from '../com.syntex.components/ContactMe'
+import { DiReact, DiCodeigniter, DiBootstrap, DiGit, DiHtml5, DiJsBadge, DiJava, DiPhp, DiPython } from "react-icons/di";
 // import $ from 'jquery'
 
 /**
@@ -84,6 +85,18 @@ function Home() {
               <span id="cursor-introduction" />
             </div>
             <div className='tech-stack'>
+              <h2>Tech Stack</h2>
+              <div className="icon-list">
+                <DiReact className="react-icon" />
+                <DiCodeigniter className="ci-icon" />
+                <DiBootstrap className="bs-icon" />
+                <DiGit className="git-icon" />
+                <DiHtml5 className="html-icon" />
+                <DiJsBadge className="js-icon" />
+                <DiJava className="java-icon" />
+                <DiPhp className="php-icon" />
+                <DiPython className="py-icon" />
+              </div>
             </div>
           </div>
         </div>
@@ -92,7 +105,7 @@ function Home() {
         <ContactMe />
       </div>
     </div>
-  )
+  );
 }
 
 export default Home

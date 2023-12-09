@@ -16,14 +16,57 @@
   cursor: none;
 }
 
-
-.tech-stack{
-
+.tech-stack {
   margin-top: 10px;
   width: 100%;
   height: 10%;
-  background-color: red;
+  margin-top: 20px;
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .icon-list {
+    display: flex;
+    align-items: center;
+
+    // Adjust the icon size and color here
+
+    font-size: 2em;
+    margin-right: 20px;
+
+    .react-icon {
+      color: rgb(6, 240, 189);
+    }
+    .ci-icon {
+      color: #EF4223; 
+    }
+    .bs-icon {
+      color: #7952B3; 
+    }
+    .git-icon {
+      color: #F1502F; 
+    }
+    .html-icon {
+      color: #E44D26;
+    }
+    .js-icon {
+      color: #F7DF1E; 
+    }
+    .java-icon {
+      color: #ED8B00; 
+    }
+    .php-icon {
+      color: #8892BF; 
+    }
+    .py-icon {
+      color: #4B8BBE; 
+    }
+  }
 }
+
+
 
 .introduction-page {
   width: 100%;

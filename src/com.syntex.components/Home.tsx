@@ -83,6 +83,8 @@ function Home() {
               <a id="occupation" />
               <span id="cursor-introduction" />
             </div>
+            <div className='tech-stack'>
+            </div>
           </div>
         </div>
       </div>

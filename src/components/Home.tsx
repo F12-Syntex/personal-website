@@ -1,19 +1,8 @@
 import React, { useEffect } from 'react'
-import '../com.syntex.sytling/App.scss'
-import '../com.syntex.sytling/mouse.scss'
-import MouseEffects from '../com.syntex.functionality/MouseEffects'
-import ContactMe from '../com.syntex.components/ContactMe'
-import {
-  DiReact,
-  DiCodeigniter,
-  DiBootstrap,
-  DiGit,
-  DiHtml5,
-  DiJsBadge,
-  DiJava,
-  DiPhp,
-  DiPython
-} from 'react-icons/di'
+import '../styling/App.css'
+import '../styling/mouse.css'
+import MouseEffects from '../effects/MouseEffects'
+import ContactMe from './ContactMe'
 // import $ from 'jquery'
 
 /**

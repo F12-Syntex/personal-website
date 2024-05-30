@@ -5,9 +5,11 @@
   display: grid;
   grid-template-columns: auto min(15vw, 80px);
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   background-color: #252627;
   cursor: none;
+
+  scroll-behavior: smooth;
 }
 
 .introduction-page {

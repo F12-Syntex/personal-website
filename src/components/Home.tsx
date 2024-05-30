@@ -77,9 +77,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="contact">
-        <ContactMe />
-      </div>
     </div>
   )
 }

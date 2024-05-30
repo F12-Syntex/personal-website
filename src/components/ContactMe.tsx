@@ -1,6 +1,6 @@
-import '../com.syntex.sytling/ContactMe.css'
-import '../com.syntex.functionality/MouseEffects'
-import MouseEffects from '../com.syntex.functionality/MouseEffects'
+import '../styling/ContactMe.css'
+import '../effects/MouseEffects'
+import MouseEffects from '../effects/MouseEffects'
 
 /**
  * The contact section of the website

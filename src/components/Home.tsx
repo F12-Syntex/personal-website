@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import '../com.syntex.sytling/App.css'
-import '../com.syntex.sytling/mouse.css'
-import MouseEffects from '../com.syntex.functionality/MouseEffects'
-import ContactMe from '../com.syntex.components/ContactMe'
+import '../styling/App.css'
+import '../styling/mouse.css'
+import MouseEffects from '../effects/MouseEffects'
+import ContactMe from './ContactMe'
 // import $ from 'jquery'
 
 /**

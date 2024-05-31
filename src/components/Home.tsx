@@ -13,7 +13,7 @@ function Home() {
   useEffect(() => {
     const occupationText = document.getElementById('occupation')
     const cursor = document.getElementById('cursor-introduction')
-    const newTextArray = ['Front-end Developer', 'Software engineer']
+    const newTextArray = ['Front-End Developer', 'Software Engineer']
     let currentTextIndex = 0
     let currentCharIndex = 0
     let isDeleting = false

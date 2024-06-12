@@ -109,8 +109,8 @@ function Home() {
             <a>Hi,</a>
             <a>I'm Saif</a>
             <div className="changeAnimation">
-              <a id="occupation" />
-              <span id="cursor-introduction" />
+              <a id="occupation"></a>
+              <span id="cursor-introduction"></span>
             </div>
             <div className="tech-stack">
               <div className="icon-list">
@@ -124,6 +124,9 @@ function Home() {
                 <DiPhp className="php-icon" />
                 <DiPython className="py-icon" />
               </div>
+            </div>
+            <div className="contact-button">
+              <button className="contact-me-button">Contact Me</button>
             </div>
           </div>
           <div className="home-image"></div>

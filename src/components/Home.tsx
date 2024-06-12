@@ -72,11 +72,18 @@ function Home() {
     MouseEffects.registerCustomCursor(document)
   }, [])
 
-
   return (
     <div className="website" id="personal-website">
       <div id="cursor" />
       <div className="website-content">
+        <div className="website-navbar">
+          <div className="navbar-links">
+            <a href="#personal-website" id='navbar-item'>Home</a>
+            <a href="#about-me" id='navbar-item'>About</a>
+            <a href="#projects" id='navbar-item'>Projects</a>
+            <a href="#contact" id='navbar-item'>Contact</a>
+          </div>
+        </div>
         <div className="introduction-page">
           <div className="introduction-label">
             <a>Hi,</a>
@@ -99,8 +106,7 @@ function Home() {
               </div>
             </div>
           </div>
-          {/* <div className='home-image'>
-          </div> */}
+          <div className="home-image"></div>
         </div>
       </div>
     </div>

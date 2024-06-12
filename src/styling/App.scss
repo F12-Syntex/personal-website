@@ -18,6 +18,27 @@
   cursor: none;
 }
 
+.website-navbar{
+  width: 100vw;
+  height: 3%;
+
+  background-color: red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+
+  #navbar-item{
+    font-size: 1.4em;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    user-select: none;
+  }
+
+}
+
 
 /* Add a custom dark scrollbar */
 ::-webkit-scrollbar {
@@ -106,7 +127,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: orange;
 }
 
 
@@ -116,7 +137,6 @@ html {
 
   display: flex;
 
-  justify-content: flex-start; 
 }
 
 .introduction-label {
@@ -127,9 +147,15 @@ html {
   display: flex;
   flex-direction: column;
   padding-left: 50px;
-
-  flex: 0 0 30%; 
 }
+
+.page-section-progress{
+  width: 1%;
+  height: 100%;
+
+  background-color: red;
+}
+
 
 .introduction-label a {
   font-size: min(10vw, 10vh);

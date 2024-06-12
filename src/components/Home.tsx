@@ -77,11 +77,31 @@ function Home() {
       <div id="cursor" />
       <div className="website-content">
         <div className="website-navbar">
+          <div className="navbar-logo">
+            <a href="#" id="logo">
+              Portfolio
+            </a>
+          </div>
           <div className="navbar-links">
-            <a href="#personal-website" id='navbar-item'>Home</a>
-            <a href="#about-me" id='navbar-item'>About</a>
-            <a href="#projects" id='navbar-item'>Projects</a>
-            <a href="#contact" id='navbar-item'>Contact</a>
+            <a href="#personal-website" id="navbar-item">
+              Home
+            </a>
+            <a href="#about-me" id="navbar-item">
+              About
+            </a>
+            <a href="#projects" id="navbar-item">
+              Projects
+            </a>
+            <a href="#contact" id="navbar-item">
+              Contact
+            </a>
+          </div>
+          <div className="navbar-menu">
+            <div className="menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
         <div className="introduction-page">

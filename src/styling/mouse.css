@@ -1,5 +1,3 @@
-@import '../com.syntex.settings/Theme.scss';
-
 #cursor {
   position: fixed;
   top: 0;
@@ -13,24 +11,20 @@
 }
 
 #cursor.moving {
-  background-color: $primary-color;
-  opacity: 1;
+  background-color: rgba(63, 223, 48, 0.5);
 }
 
 #cursor.mousedown {
-  background-color: $primary-color;
-  opacity: 1;
+  background-color: rgba(63, 223, 48, 0.75);
   transform: scale(0.75);
 }
 
 #cursor.mouseup {
-  background-color: $primary-color;
-  opacity: 1;
+  background-color: rgba(63, 223, 48, 0.5);
 }
 
 #cursor.hover {
-  background-color: $secondary-color;
-  opacity: 0.15;
-  transform: scale(2.5);
+  background-color: rgba(63, 223, 48, 0.2);
+  transform: scale(2);
   transition: transform 0.2s ease-in-out; /* Set transition properties */
 }

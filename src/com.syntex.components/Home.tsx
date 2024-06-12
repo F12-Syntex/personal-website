@@ -3,7 +3,17 @@ import '../com.syntex.sytling/App.scss'
 import '../com.syntex.sytling/mouse.scss'
 import MouseEffects from '../com.syntex.functionality/MouseEffects'
 import ContactMe from '../com.syntex.components/ContactMe'
-import { DiReact, DiCodeigniter, DiBootstrap, DiGit, DiHtml5, DiJsBadge, DiJava, DiPhp, DiPython } from "react-icons/di";
+import {
+  DiReact,
+  DiCodeigniter,
+  DiBootstrap,
+  DiGit,
+  DiHtml5,
+  DiJsBadge,
+  DiJava,
+  DiPhp,
+  DiPython
+} from 'react-icons/di'
 // import $ from 'jquery'
 
 /**
@@ -12,16 +22,15 @@ import { DiReact, DiCodeigniter, DiBootstrap, DiGit, DiHtml5, DiJsBadge, DiJava,
  */
 function Home() {
   useEffect(() => {
-
-    const isNotComputer = document.documentElement.clientWidth < 1024;
+    const isNotComputer = document.documentElement.clientWidth < 1024
 
     if (isNotComputer) {
-      const cursorElement = document.getElementById('cursor');
+      const cursorElement = document.getElementById('cursor')
       if (cursorElement) {
-        cursorElement.remove();
+        cursorElement.remove()
       }
     } else {
-      MouseEffects.registerCustomCursor(document);
+      MouseEffects.registerCustomCursor(document)
     }
 
     const occupationText = document.getElementById('occupation')
@@ -71,7 +80,6 @@ function Home() {
     typeWriter()
   }, [])
 
-
   return (
     <div className="website" id="personal-website">
       <div id="cursor" />
@@ -84,7 +92,7 @@ function Home() {
               <a id="occupation" />
               <span id="cursor-introduction" />
             </div>
-            <div className='tech-stack'>
+            <div className="tech-stack">
               <div className="icon-list">
                 <DiReact className="react-icon" />
                 <DiCodeigniter className="ci-icon" />
@@ -104,7 +112,7 @@ function Home() {
         <ContactMe />
       </div>
     </div>
-  );
+  )
 }
 
 export default Home

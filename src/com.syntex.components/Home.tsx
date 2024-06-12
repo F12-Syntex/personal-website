@@ -85,7 +85,6 @@ function Home() {
               <span id="cursor-introduction" />
             </div>
             <div className='tech-stack'>
-              <h2>Tech Stack</h2>
               <div className="icon-list">
                 <DiReact className="react-icon" />
                 <DiCodeigniter className="ci-icon" />

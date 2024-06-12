@@ -1,8 +1,26 @@
 import React, { useEffect } from 'react'
+<<<<<<< HEAD:src/components/Home.tsx
 import '../styling/App.css'
 import '../styling/mouse.css'
 import MouseEffects from '../effects/MouseEffects'
 import ContactMe from './ContactMe'
+=======
+import '../com.syntex.sytling/App.scss'
+import '../com.syntex.sytling/mouse.scss'
+import MouseEffects from '../com.syntex.functionality/MouseEffects'
+import ContactMe from '../com.syntex.components/ContactMe'
+import {
+  DiReact,
+  DiCodeigniter,
+  DiBootstrap,
+  DiGit,
+  DiHtml5,
+  DiJsBadge,
+  DiJava,
+  DiPhp,
+  DiPython
+} from 'react-icons/di'
+>>>>>>> developer:src/com.syntex.components/Home.tsx
 // import $ from 'jquery'
 
 /**
@@ -11,6 +29,17 @@ import ContactMe from './ContactMe'
  */
 function Home() {
   useEffect(() => {
+    const isNotComputer = document.documentElement.clientWidth < 1024
+
+    if (isNotComputer) {
+      const cursorElement = document.getElementById('cursor')
+      if (cursorElement) {
+        cursorElement.remove()
+      }
+    } else {
+      MouseEffects.registerCustomCursor(document)
+    }
+
     const occupationText = document.getElementById('occupation')
     const cursor = document.getElementById('cursor-introduction')
     const newTextArray = ['Front-End Developer', 'Software Engineer']
@@ -58,10 +87,6 @@ function Home() {
     typeWriter()
   }, [])
 
-  useEffect(() => {
-    MouseEffects.registerCustomCursor(document)
-  }, [])
-
   return (
     <div className="website" id="personal-website">
       <div id="cursor" />
@@ -74,7 +99,22 @@ function Home() {
               <a id="occupation" />
               <span id="cursor-introduction" />
             </div>
+            <div className="tech-stack">
+              <div className="icon-list">
+                <DiReact className="react-icon" />
+                <DiCodeigniter className="ci-icon" />
+                <DiBootstrap className="bs-icon" />
+                <DiGit className="git-icon" />
+                <DiHtml5 className="html-icon" />
+                <DiJsBadge className="js-icon" />
+                <DiJava className="java-icon" />
+                <DiPhp className="php-icon" />
+                <DiPython className="py-icon" />
+              </div>
+            </div>
           </div>
+          {/* <div className='home-image'>
+          </div> */}
         </div>
       </div>
     </div>

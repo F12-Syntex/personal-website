@@ -1,0 +1,36 @@
+@import '../com.syntex.settings/Theme.scss';
+
+#cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  opacity: 1;
+  pointer-events: none;
+  transition: transform 0.15s ease-in-out; /* Set transition properties */
+}
+
+#cursor.moving {
+  background-color: $primary-color;
+  opacity: 1;
+}
+
+#cursor.mousedown {
+  background-color: $primary-color;
+  opacity: 1;
+  transform: scale(0.75);
+}
+
+#cursor.mouseup {
+  background-color: $primary-color;
+  opacity: 1;
+}
+
+#cursor.hover {
+  background-color: $secondary-color;
+  opacity: 0.15;
+  transform: scale(2.5);
+  transition: transform 0.2s ease-in-out; /* Set transition properties */
+}

@@ -1,6 +1,14 @@
+<<<<<<< HEAD:src/components/ContactMe.tsx
 import '../styling/ContactMe.css'
 import '../effects/MouseEffects'
 import MouseEffects from '../effects/MouseEffects'
+=======
+import '../com.syntex.sytling/ContactMe.css'
+import '../com.syntex.functionality/MouseEffects'
+import MouseEffects from '../com.syntex.functionality/MouseEffects'
+import { SourceTextModule } from 'vm'
+import { MouseEventHandler } from 'react'
+>>>>>>> developer:src/com.syntex.components/ContactMe.tsx
 
 /**
  * The contact section of the website

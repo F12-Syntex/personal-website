@@ -1,4 +1,4 @@
-@import '../com.syntex.settings/Theme.scss';
+@import '../styling/Theme.scss';
 
 #cursor {
   position: fixed;
@@ -10,26 +10,33 @@
   opacity: 1;
   pointer-events: none;
   transition: transform 0.15s ease-in-out; /* Set transition properties */
+
+  //outline
+  box-shadow: 0 0 0 2px $mouse-colour;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 #cursor.moving {
-  background-color: $primary-color;
+  background-color: $mouse-colour;
   opacity: 1;
 }
 
 #cursor.mousedown {
-  background-color: $primary-color;
+  background-color: $mouse-hover-colour;
   opacity: 1;
   transform: scale(0.75);
 }
 
 #cursor.mouseup {
-  background-color: $primary-color;
+  background-color: $mouse-colour;
   opacity: 1;
 }
 
 #cursor.hover {
-  background-color: $secondary-color;
+  background-color: $mouse-colour;
   opacity: 0.15;
   transform: scale(2.5);
   transition: transform 0.2s ease-in-out; /* Set transition properties */

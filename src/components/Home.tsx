@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import '../styling/App.scss'
-import '../styling/mouse.css'
+import '../styling/mouse.scss'
 import MouseEffects from '../effects/MouseEffects'
 import {
   DiReact,

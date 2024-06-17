@@ -130,7 +130,7 @@ function Home() {
             </div>
           </div>
           <div className="home-image"></div>
-           
+            
         </div>
       </div>
     </div>
@@ -138,3 +138,4 @@ function Home() {
 }
 
 export default Home
+ 
